@@ -25,17 +25,17 @@ interface FilterState {
 }
 
 const mockDevices: Device[] = [
-  { id: 1, name: '科学城前门人员出', location: '科学城西南门', mode: '自动', status: 'connected' },
-  { id: 2, name: '科学城前门人员进', location: '科学城西南门', mode: '自动', status: 'connected' },
-  { id: 3, name: '科学城前门非机动车出', location: '科学城西南门', mode: '自动', status: 'connected' },
-  { id: 4, name: '科学城前门非机动车进', location: '科学城西南门', mode: '自动', status: 'connected' },
+  { id: 1, name: '1号电梯', location: '东鹏大厦1号正门', mode: '自动', status: 'connected' },
+  { id: 2, name: '2号电梯', location: '东鹏大厦1号正门', mode: '自动', status: 'connected' },
+  { id: 3, name: '3号电梯', location: '东鹏大厦1号正门', mode: '自动', status: 'connected' },
+  { id: 4, name: '4号电梯', location: '东鹏大厦1号正门', mode: '自动', status: 'connected' },
 ]
 
 const mockLocations: LocationItem[] = [
-  { id: 1, name: '科学城西南门', icon: '📁' },
+  { id: 1, name: '东鹏大厦1号正门', icon: '📁' },
   {
     id: 2,
-    name: '科学城综合楼',
+    name: '东鹏大厦综合楼',
     icon: '📁',
     children: [
       { id: 21, name: '1号电梯厅', icon: '📄' },
@@ -44,19 +44,19 @@ const mockLocations: LocationItem[] = [
   },
   {
     id: 3,
-    name: '科学城检测楼',
+    name: '东鹏大厦检测楼',
     icon: '📁',
     children: [
       { id: 31, name: '1号电梯', icon: '📄' },
       { id: 32, name: '2号电梯', icon: '📄' },
     ],
   },
-  { id: 4, name: '科学城北门', icon: '📁' },
+  { id: 4, name: '东鹏大厦北门', icon: '📁' },
 ]
 
 function ElevatorControl() {
   const navigate = useNavigate()
-  const [currentLocation, setCurrentLocation] = useState('科学城西南门')
+  const [currentLocation, setCurrentLocation] = useState('东鹏大厦1号正门')
   const [showLocationPicker, setShowLocationPicker] = useState(false)
   const [showFilter, setShowFilter] = useState(false)
   const [batchMode, setBatchMode] = useState(false)
