@@ -1,0 +1,170 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e0edff 0%, #f0f5ff 35%, #f5f6f8 50%, #f5f6f8 100%);
+  padding-bottom: 30px;
+}
+
+.header-bg {
+  padding: 20px 16px 0;
+  position: relative;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-shape {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a5f;
+  letter-spacing: 1px;
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0 20px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.greeting {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.company {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.user-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-personal {
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: white;
+  color: #3b82f6;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #3b82f6;
+}
+
+.btn-switch {
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: #3b82f6;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.avatar-wrapper {
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.avatar {
+  width: 100px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.avatar-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-section {
+  padding: 0 16px;
+  margin-top: 10px;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.menu-row:last-child {
+  margin-bottom: 0;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.menu-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.menu-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.menu-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  flex: 1;
+}
+
+.menu-arrow {
+  font-size: 20px;
+  color: #cbd5e1;
+  font-weight: 300;
+}
