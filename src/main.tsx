@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import ElevatorControl from './pages/ElevatorControl'
+import ElevatorRecords from './pages/ElevatorRecords'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -11,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/elevator-control" element={<ElevatorControl />} />
+        <Route path="/elevator-records/:elevatorId" element={<ElevatorRecords />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>,
